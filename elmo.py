@@ -180,9 +180,9 @@ with tf.Session() as sess:
             best_dev = acc_dev
             l = logits.eval(feed_dict={X:X_test, y:y_test, e:e_test, e2:e2_dev})
             tp, fp, fn, tn = eval_from_logits(l, y_test)
-            with open("logits","w") as output:
-                for i in range(len(l)):
-                    output.write("%.4f,%.4f,%d,%s" % (l[i][0],l[i][1],y_test[i],X_test[i]))
+#            with open("logits","w") as output:
+#                for i in range(len(l)):
+#                    output.write("%.4f,%.4f,%d,%s\n" % (l[i][0],l[i][1],y_test[i],test[i]))
 
 
 
