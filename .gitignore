@@ -1,0 +1,7 @@
+glove*
+*.pyc
+*~
+*.swp
+wn31.xml
+tf_logs/
+logits
